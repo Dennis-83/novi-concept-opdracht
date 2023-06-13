@@ -21,6 +21,12 @@
 /*Grijs #7A7A7A (voor de service-tegel tekst);*/
 
 
+/*   VERGEET NIET LINKS IN NAVBAR                           */
+/*       NAAR BIJBEHORENDE SECTIES                      */
+/*       TE LATEN VERWIJZEN                            */
+
+
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
 * {
     box-sizing: border-box;
@@ -46,6 +52,17 @@ ul {
     list-style: none;
 }
 
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    text-transform: uppercase;
+    color: white;
+    background-color: #ED4385;
+}
+
 
 
 
@@ -58,7 +75,6 @@ ul {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-
 }
 
 .inner-container {
@@ -69,10 +85,15 @@ ul {
     margin: 0 20px;
 }
 
+.btn {
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 5px 3px 13px hsl(233, -95%, 23%);
+}
+
 .debug {
     border: 2px solid red;
 }
-
 
 
 /* --------------- 3.2 Other --------------------------- */
@@ -82,8 +103,10 @@ ul {
 /* --------------- 4.1 Header ------------------------- */
 
 header {
-    background-color: #4845E4;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(120deg, rgba(72,69,228,1) 26%, rgba(87,34,205,1) 100%);
     color: white;
 }
 
@@ -91,8 +114,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 20px 0;
-
+    padding-top: 20px;
 }
 
 .nav-menu {
@@ -101,17 +123,46 @@ header {
     justify-content: space-evenly;
 }
 
+.title-section {
+    padding: 100px 0 75px 0;
+}
+
 .title-header {
     padding: 40px 0;
 }
 
 .subtitle-header {
-
     padding: 20px 0;
+}
+
+.squigly-stripe {
+    /*margin-top: 50px;*/
+    align-self: center;
+    max-height: 100px;
 }
 
 
 
 /* --------------- 4.2 Introduction ------------------- */
+
+
+.intro {
+    color:#5722CD ;
+    padding: 100px 0;
+}
+
+.punchlines {
+    padding: 15px 0;
+}
+
+.questions {
+    color: black;
+    padding-top: 60px;
+}
+
+
+
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
